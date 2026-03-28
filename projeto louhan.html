@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>louhanbuilds</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top, #0a0a0f, #000000);
+      color: white;
+    }
+
+    header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      backdrop-filter: blur(10px);
+      background: rgba(0,0,0,0.6);
+      border-bottom: 1px solid #111;
+      z-index: 1000;
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+    }
+
+    nav h1 {
+      font-family: 'Orbitron', sans-serif;
+      color: #3b82f6;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: #ccc;
+      transition: 0.3s;
+    }
+
+    nav a:hover { color: #3b82f6; }
+
+    section {
+      padding: 120px 20px;
+      max-width: 1100px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 56px;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(90deg,#3b82f6,#a855f7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      color: #aaa;
+      max-width: 700px;
+      margin: auto;
+      margin-bottom: 30px;
+      font-size: 18px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 14px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .whatsapp { background: #25D366; }
+    .email { background: #2563eb; }
+    .insta { background: #e1306c; }
+
+    .buttons a:hover { transform: scale(1.05); }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 30px;
+      border-radius: 20px;
+      backdrop-filter: blur(6px);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: #3b82f6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      border-top: 1px solid #111;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>louhanbuilds</h1>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#services">Serviços</a>
+      <a href="#louhanvagas">LouhanVagas</a>
+    </div>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <h2>Design & Edição Profissional</h2>
+  <p>Criação de artes modernas, edição de vídeos e identidade visual com estética tecnológica para empresas, igrejas e eventos.</p>
+
+  <div class="buttons">
+    <a class="whatsapp" href="https://wa.me/5574988522873">WhatsApp</a>
+    <a class="email" href="mailto:louhanazevedo73@gmail.com">Email</a>
+    <a class="insta" href="https://instagram.com/louhanbuilds">Instagram</a>
+  </div>
+</section>
+
+<section id="services">
+  <h2 style="font-size:36px;margin-bottom:20px;">Serviços</h2>
+
+  <div class="services">
+    <div class="card">
+      <h3>Edição de Vídeo</h3>
+      <p>Cortes profissionais, reels, vídeos promocionais e conteúdo para redes sociais.</p>
+    </div>
+
+    <div class="card">
+      <h3>Criação de Artes</h3>
+      <p>Artes para eventos, igrejas, redes sociais, banners e materiais promocionais.</p>
+    </div>
+
+    <div class="card">
+      <h3>Identidade Visual</h3>
+      <p>Logotipos, paletas de cores e branding completo para sua marca.</p>
+    </div>
+  </div>
+</section>
+
+<section id="louhanvagas">
+  <h2 style="font-size:36px;margin-bottom:20px;">LouhanVagas</h2>
+  <p style="color:#aaa;margin-bottom:20px;">Estou com vagas abertas no <strong>ramo agrícola</strong>. Entre em contato direto pelo WhatsApp.</p>
+
+  <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);padding:25px;border-radius:16px;max-width:700px;margin:0 auto 25px auto;">
+    <h3 style="margin-bottom:15px;color:#3b82f6;">Vagas disponíveis</h3>
+    <ul style="list-style:none;line-height:1.8;color:#ddd;">
+      <li>🌱 Colheita</li>
+      <li>✂️ Poda</li>
+      <li>🪢 Amarrio</li>
+      <li>🌿 Desbrota</li>
+      <li>🍇 Despenca</li>
+      <li>e outras atividades agrícolas</li>
+    </ul>
+  </div>
+
+  <a href="https://wa.me/5574988522873" style="display:inline-block;background:#25D366;padding:15px 30px;border-radius:30px;text-decoration:none;color:white;font-weight:600;transition:0.3s;">
+    Falar no WhatsApp
+  </a>
+
+  <p style="margin-top:25px;color:#aaa;">Ou envie email: <strong>louhanazevedo73@gmail.com</strong></p>
+  <p style="color:#aaa;">Instagram: <strong>@louhanbuilds</strong></p>
+  <div style="margin-top:40px;max-width:600px;margin-left:auto;margin-right:auto;">
+    <h3 style="margin-bottom:15px;">Candidatar-se a uma vaga</h3>
+    <form onsubmit="enviarWhats(event)" style="display:flex;flex-direction:column;gap:10px;">
+      <input type="text" id="nome" placeholder="Seu nome" required style="padding:12px;border-radius:8px;border:none;">
+      <input type="text" id="cidade" placeholder="Cidade" required style="padding:12px;border-radius:8px;border:none;">
+      <select id="vaga" required style="padding:12px;border-radius:8px;border:none;">
+        <option value="">Selecione a vaga desejada</option>
+        <option>Colheita</option>
+        <option>Poda</option>
+        <option>Amarrio</option>
+        <option>Desbrota</option>
+        <option>Despenca</option>
+        <option>Outras atividades</option>
+      </select>
+      <input type="text" id="experiencia" placeholder="Experiência na área" style="padding:12px;border-radius:8px;border:none;">
+      <button type="submit" style="background:#3b82f6;padding:14px;border:none;border-radius:25px;color:white;font-weight:600;cursor:pointer;">Enviar candidatura</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  © 2026 louhanbuilds — Todos os direitos reservados
+</footer>
+
+<script>
+function enviarWhats(event){
+  event.preventDefault();
+  const nome = document.getElementById('nome').value;
+  const cidade = document.getElementById('cidade').value;
+  const vaga = document.getElementById('vaga').value;
+  const experiencia = document.getElementById('experiencia').value;
+
+  const mensagem = `Olá, meu nome é ${nome}. Sou de ${cidade}. Tenho interesse na vaga de ${vaga}. Experiência: ${experiencia}. Gostaria de me candidatar.`;
+  const url = `https://wa.me/5574988522873?text=${encodeURIComponent(mensagem)}`;
+  window.open(url, '_blank');
+}
+</script>
+</body>
+</html>
